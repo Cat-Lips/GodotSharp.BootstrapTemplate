@@ -1,0 +1,6 @@
+﻿/.vs
+/.godot
+/godot.log
+
+*.import
+*.csproj.user

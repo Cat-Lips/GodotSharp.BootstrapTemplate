@@ -1,0 +1,48 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+run/main_scene="res://Game/Scenes/Bootstrap.tscn"
+boot_splash/image="res://Assets/Art/Icons/icon.png"
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+boot_splash/bg_color=Color( 0, 0, 0, 0 )
+config/icon="res://Assets/Art/Icons/icon.png"
+config/macos_native_icon="res://Assets/Art/Icons/icon.icns"
+config/windows_native_icon="res://Assets/Art/Icons/icon.ico"
+
+[display]
+
+window/size/resizable=false
+window/size/borderless=true
+window/size/fullscreen=true
+
+[editor]
+
+script/templates_search_path="res://.editor"
+
+[editor_plugins]
+
+enabled=PackedStringArray( "res://addons/GodotSharp.BuildingBlocks.ProjectSync/plugin.cfg" )
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[physics]
+
+2d/run_on_thread=true
+3d/run_on_thread=true
+
+[rendering]
+
+driver/threads/thread_model=2
+environment/defaults/default_clear_color=Color( 0, 0, 0, 0 )

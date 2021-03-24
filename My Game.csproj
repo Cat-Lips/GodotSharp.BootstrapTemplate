@@ -1,0 +1,23 @@
+﻿<Project Sdk="Godot.NET.Sdk/4.0.0-dev5">
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+    <RootNamespace>MyGame</RootNamespace>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Game/**" Exclude="**/*.cs;**/*.import" />
+    <Content Include="Tests/**" Exclude="**/*.cs;**/*.import" />
+    <Content Include="Assets/**" Exclude="**/*.cs;**/*.import" />
+    <Content Include="addons/**" Exclude="**/*.cs;**/*.import" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="FluentAssertions.Analyzers" Version="0.11.4" />
+    <PackageReference Include="GodotSharp.SourceGenerators" Version="1.1.4" />
+  </ItemGroup>
+</Project>
